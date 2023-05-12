@@ -70,6 +70,14 @@ const App = () => {
     },
   ]
 
+    const kelseasThings = [
+    {
+      name: "cat tacos",
+      image: "https://imgs.xkcd.com/comics/health_drink_2x.png",  
+      attributes: ["yummy", "delicious", "a taco", "beautiful"],
+    },
+  ]
+
   return (
     <Routes>
       {/* All the <Route> components should live here */}
@@ -89,6 +97,10 @@ const App = () => {
       <Route
         path="/the-taco-things"
         element={<TacoThings things={mikesThings} />}
+      />
+      <Route
+        path="/the-taco-things"
+        element={<TacoThings things={kelseasThings} />}
       />
     </Routes>
   )
