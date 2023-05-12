@@ -77,6 +77,13 @@ const App = () => {
       attributes: ["yummy", "delicious", "a taco", "beautiful"],
     },
   ]
+  const nicksThings = [
+    {
+      name: "water",
+      image: "https://imgs.xkcd.com/comics/positive_and_negative_reviews.png",  
+      attributes: ["neccessary", "hyrdrating", "underrated", "amazing"],
+    },
+  ]
 
   return (
     <Routes>
@@ -101,6 +108,10 @@ const App = () => {
       <Route
         path="/the-taco-things"
         element={<TacoThings things={kelseasThings} />}
+      />
+      <Route
+        path="/the-water-things"
+        element={<WaterThings things={nicksThings} />}
       />
     </Routes>
   )
